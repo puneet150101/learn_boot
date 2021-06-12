@@ -9,10 +9,10 @@
 <body>
 <button type="button" onclick="document.location='/'">Home</button><br><br>
 <h1>Student don't exist in DB</h1>
-<h3>Search student by ID here:</h3>
+<h3>Search student by name here:</h3>
 <form action = "search">
-<label for="sid">Enter student ID</label>
-<input type="text" id="sid" name="sid"><br>
+<label for="sname">Enter student name:</label>
+<input type="text" id="sname" name="sname" pattern="[A-Za-z]{0-50}" title="Enter full name in alphabets"><br>
 <input type="submit" value="Find">
 </form>
 </body>

@@ -1,15 +1,20 @@
 package com.learn.demodb;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
+
 
 
 @Entity
 public class Student {
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int sid;
-    private String sname;
     private int sclass;
+    private String sname;
     public int getSid() {
         return sid;
     }
